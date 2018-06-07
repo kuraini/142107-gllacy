@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -49,7 +50,7 @@
               <span class="page-header___link-text">Поиск</span>
             </a>
             <form class="search" action="#" method="get">
-              <label class="search__label visually-hidden" for="search">Введите название товара</label>
+              <label class="visually-hidden" for="search">Введите название товара</label>
               <input class="search__input" type="search" name="search" placeholder="Что ищем?" id="search">
             </form>
           </div>
@@ -59,13 +60,13 @@
               <span class="page-header__link-icon"></span>
               <span class="page-header__link-text">Вход</span>
             </a>
-            <form class="authorization" action="#" method="post">
+            <form class="authorization" action="https://echo.htmlacademy.ru" method="post">
               <div class="authorization__wrapper">
-                <label class="authorization__label" for="user-email">Введите ваш email</label>
+                <label class="visually-hidden" for="user-email">Введите ваш email</label>
                 <input class="authorization__input" type="email" name="email" placeholder="Электронная почта" id="user-email">
               </div>
               <div class="authorization__wrapper">
-                <label class="authorization__label" for="user-password">Введите ваш пароль</label>
+                <label class="visually-hidden" for="user-password">Введите ваш пароль</label>
                 <input class="authorization__input" type="password" name="password" placeholder="Пароль" id="user-password">
               </div>
               <div class="authorization__wrapper">
@@ -139,47 +140,50 @@
           </section>
         </section>
 
-        <section class="hits">
+        <section class="catalog">
           <h2 class="visually-hidden">Хиты продаж</h2>
-          <ul class="hits__list">
-            <li class="hits__item">
-              <article class="hit">
-                <a href="#" class="hit__link">
-                  <img class="hit__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-                </a>
-                <p class="hit__price">310 &#8381;<span>/кг</span></p>
-                <h3 class="hit__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-                <a href="#" class="hit__button button">Быстрый просмотр</a>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <article class="good-card good-card--hit">
+                <div class="good-card__image-wrapper">
+                  <img class="good-card__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+                </div>
+                <p class="good-card__price">310 &#8381;<span>/кг</span></p>
+                <h3 class="good-card__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                <a href="#" class="good-card__button button">Быстрый просмотр</a>
               </article>
             </li>
-            <li class="hits__item">
-              <article class="hit">
-                <a href="#" class="hit__link">
-                  <img class="hit__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-                </a>
-                <p class="hit__price">380 &#8381;<span>/кг</span></p>
-                <h3 class="hit__title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-                <a href="#" class="hit__button button">Быстрый просмотр</a>
+
+            <li class="catalog__item">
+              <article class="good-card good-card--hit">
+                <div class="good-card__image-wrapper">
+                  <img class="good-card__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+                </div>
+                <p class="good-card__price">380 &#8381;<span>/кг</span></p>
+                <h3 class="good-card__title">Сливочно-кофейное с кусочками шоколада</h3>
+                <a href="#" class="good-card__button button">Быстрый просмотр</a>
               </article>
             </li>
-            <li class="hits__item">
-              <article class="hit">
-                <a href="#" class="hit__link">
-                  <img class="hit__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-                </a>
-                <p class="hit__price">355 &#8381;<span>/кг</span></p>
-                <h3 class="hit__title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-                <a href="#" class="hit__button button">Быстрый просмотр</a>
+
+            <li class="catalog__item">
+              <article class="good-card good-card--hit">
+                <div class="good-card__image-wrapper">
+                  <img class="good-card__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+                </div>
+                <p class="good-card__price">355 &#8381;<span>/кг</span></p>
+                <h3 class="good-card__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <a href="#" class="good-card__button button">Быстрый просмотр</a>
               </article>
             </li>
-            <li class="hits__item">
-              <article class="hit">
-                <a href="#" class="hit__link">
-                  <img class="hit__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                </a>
-                <p class="hit__price">415 &#8381;<span>/кг</span></p>
-                <h3 class="hit__title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-                <a href="#" class="hit__button button">Быстрый просмотр</a>
+
+            <li class="catalog__item">
+              <article class="good-card good-card--hit">
+                <div class="good-card__image-wrapper">
+                  <img class="good-card__image" src="http://placehold.it/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                </div>
+                <p class="good-card__price">415 &#8381;<span>/кг</span></p>
+                <h3 class="good-card__title">Сливочное крем-брюле с карамельной подливкой</h3>
+                <a href="#" class="good-card__button button">Быстрый просмотр</a>
               </article>
             </li>
           </ul>
@@ -286,7 +290,7 @@
 
       <div class="popup">
         <h2 class="popup__title">Мы обязательно вам ответим!</h2>
-        <form class="message" action="#" method="post">
+        <form class="message" action="https://echo.htmlacademy.ru" method="post">
           <div class="message__item">
           <label class="visually-hidden" for="name">Введите ваше имя</label>
           <input class="message__input" type="text" name="name" placeholder="Как вас зовут?" id="name">
