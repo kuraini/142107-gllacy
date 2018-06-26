@@ -13,122 +13,125 @@
         <symbol id="icon-search" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></symbol>
         <symbol id="icon-entrance" viewBox="0 0 21 19"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></symbol>
         <symbol id="icon-cart" viewBox="0 0 21 20"><g><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></symbol>
+        <symbol id="icon-heart" viewBox="0 0 15 13"><path d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z"/></symbol>
       </svg>
 
     <div class="wrapper">
 
       <header class="page-header">
-        <nav class="page-header__nav">
-          <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy»">
-          </a>
-          <ul class="main-nav">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Каталог</a>
-              <ul class="main-nav__dropdown-list">
-                <li class="main-nav__dropdown-item">
-                  <a class="main-nav__dropdown-link" href="new.html">Новинки</a>
-                </li>
-                <li class="main-nav__dropdown-item">
-                  <a class="main-nav__dropdown-link" href="catalog.html">Сливочное</a>
-                </li>
-                <li class="main-nav__dropdown-item">
-                  <a class="main-nav__dropdown-link" href="sherbet.html">Щербеты</a>
-                </li>
-                <li class="main-nav__dropdown-item">
-                  <a class="main-nav__dropdown-link" href="fruit.html">Фруктовый лед</a>
-                </li>
-                <li class="main-nav__dropdown-item">
-                  <a class="main-nav__dropdown-link" href="melorin.html">Мелорин</a>
-                </li>
-              </ul>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="delivery.html">Доставка и оплата</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="about.html">О компании</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="user-block">
-          <div class="user-block__search">
-            <a href="#" class="user-block__link user-block__link--only-icon">
-              <svg class="user-block__link-icon" width="17" height="17"><use xlink:href="#icon-search"></use></svg>
-              <span class="user-block___link-text visually-hidden">Поиск</span>
+        <div class="page-header__wrapper">
+          <nav class="page-header__nav">
+            <a class="page-header__logo" href="index.html">
+              <img class="page-header__logo-image" src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy»">
             </a>
-            <form class="search-form" action="#" method="get">
-              <label class="visually-hidden" for="search">Введите название товара</label>
-              <input class="search-form__input" type="search" name="search" placeholder="Что ищем?" id="search">
-            </form>
-          </div>
+            <ul class="main-nav">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Каталог</a>
+                <ul class="main-nav__dropdown-list">
+                  <li class="main-nav__dropdown-item">
+                    <a class="main-nav__dropdown-link" href="new.html">Новинки</a>
+                  </li>
+                  <li class="main-nav__dropdown-item">
+                    <a class="main-nav__dropdown-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="main-nav__dropdown-item">
+                    <a class="main-nav__dropdown-link" href="sherbet.html">Щербеты</a>
+                  </li>
+                  <li class="main-nav__dropdown-item">
+                    <a class="main-nav__dropdown-link" href="fruit.html">Фруктовый лед</a>
+                  </li>
+                  <li class="main-nav__dropdown-item">
+                    <a class="main-nav__dropdown-link" href="melorin.html">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="delivery.html">Доставка и оплата</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="about.html">О Компании</a>
+              </li>
+            </ul>
+          </nav>
 
-          <div class="user-block__authorization">
-            <a href="#" class="user-block__link">
-              <svg class="user-block__link-icon" width="21" height="19"><use xlink:href="#icon-entrance"></use></svg>
-              <span class="user-block__link-text">Вход</span>
-            </a>
-            <form class="authorization-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="authorization-form__inner">
+          <div class="user-block">
+            <div class="user-block__search">
+              <a href="#" class="user-block__link user-block__link--only-icon">
+                <svg class="user-block__link-icon" width="17" height="17"><use xlink:href="#icon-search"></use></svg>
+                <span class="user-block___link-text visually-hidden">Поиск</span>
+              </a>
+              <form class="search-form" action="#" method="get">
+                <label class="visually-hidden" for="search">Введите название товара</label>
+                <input class="search-form__input" type="search" name="search" placeholder="Что ищем?" id="search">
+              </form>
+            </div>
+
+            <div class="user-block__authorization">
+              <a href="#" class="user-block__link">
+                <svg class="user-block__link-icon" width="21" height="19"><use xlink:href="#icon-entrance"></use></svg>
+                <span class="user-block__link-text">Вход</span>
+              </a>
+              <form class="authorization-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-email">Введите ваш email</label>
                 <input class="authorization-form__input" type="email" name="email" placeholder="Электронная почта" id="user-email">
-              </div>
-              <div class="authorization-form__inner">
                 <label class="visually-hidden" for="user-password">Введите ваш пароль</label>
                 <input class="authorization-form__input" type="password" name="password" placeholder="Пароль" id="user-password">
-              </div>
-              <div class="authorization-form__inner">
-                <button class="authorization-form__button button" type="submit">Войти</button>
-                <div class="authorization-form__links">
-                  <a href="#" class="authorization-form__link">Забыли пароль?</a>
-                  <a href="#" class="authorization-form__link">Новая регистрация</a>
+                <div class="authorization-form__inner">
+                  <button class="authorization-form__button button" type="submit">Войти</button>
+                  <ul class="authorization-form__links">
+                    <li class="authorization-form__links-item">
+                      <a href="#" class="authorization-form__link">Забыли пароль?</a>
+                    </li>
+                    <li class="authorization-form__links-item">
+                      <a href="#" class="authorization-form__link">Новая регистрация</a>
+                    </li>
+                  </ul>
                 </div>
+              </form>
+            </div>
+
+            <div class="user-block__cart user-block__cart--filled">
+              <a href="#" class="user-block__link user-block__link--cart-filled">
+                <svg class="user-block__link-icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg>
+                <span class="user-block__link-text">2 товара</span>
+              </a>
+
+              <div class="cart">
+                <table class="cart__goods">
+                  <tr>
+                    <td>
+                      <button class="cart__delete" type="button">
+                        <span class="visually-hidden">Удалить товар</span>
+                      </button>
+                    </td>
+                    <td>
+                      <div class="cart__image-wrapper">
+                        <img class="cart__image" src="img/content/cart/mini-cream-and-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                      </div>
+                    </td>
+                    <td class="cart__title">Пломбир с апельсиновым джемом</td>
+                    <td class="cart__weight">1,5 кг х <span>200 руб.</span></td>
+                    <td class="cart__price">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="cart__delete" type="button">
+                        <span class="visually-hidden">Удалить товар</span>
+                      </button>
+                    </td>
+                    <td>
+                      <div class="cart__image-wrapper">
+                        <img class="cart__image" src="img/content/cart/mini-rasp-and-white-choco.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                      </div>
+                    </td>
+                    <td class="cart__title">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="cart__weight">1,5 кг х <span>300 руб.</span></td>
+                    <td class="cart__price">450 руб.</td>
+                  </tr>
+                </table>
+                <p class="cart__total-price">Итого: 750 руб.</p>
+                <button class="cart__button button">Оформить заказ</button>
               </div>
-            </form>
-          </div>
-
-          <div class="user-block__cart">
-            <a href="#" class="user-block__link user-block__link--cart-filled">
-              <svg class="user-block__link-icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg>
-              <span class="user-block__link-text">2 товара</span>
-            </a>
-
-            <div class="cart">
-              <table class="cart__goods">
-                <tr>
-                  <td>
-                    <button class="cart__delete" type="button">
-                      <span class="visually-hidden">Удалить товар</span>
-                    </button>
-                  </td>
-                  <td>
-                    <div class="cart__image-wrapper">
-                      <img class="cart__image" src="img/content/cart/mini-cream-and-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                    </div>
-                  </td>
-                  <td class="cart__title">Пломбир с апельсиновым джемом</td>
-                  <td class="cart__weight">1,5 кг х <span>200 руб.</span></td>
-                  <td class="cart__price">300 руб.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <button class="cart__delete" type="button">
-                      <span class="visually-hidden">Удалить товар</span>
-                    </button>
-                  </td>
-                  <td>
-                    <div class="cart__image-wrapper">
-                      <img class="cart__image" src="img/content/cart/mini-rasp-and-white-choco.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                    </div>
-                  </td>
-                  <td class="cart__title">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="cart__weight">1,5 кг х <span>300 руб.</span></td>
-                  <td class="cart__price">450 руб.</td>
-                </tr>
-              </table>
-              <p class="cart__total-price">Итого: 750 руб.</p>
-              <button class="cart__button button">Оформить заказ</button>
             </div>
           </div>
         </div>
@@ -237,183 +240,207 @@
 
           <ul class="catalog__list">
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-and-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">310</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/coffee-and-choco.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">380</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочно-кофейное с кусочками шоколада</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочно-кофейное с кусочками шоколада</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/rasp-and-white-choco.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 </div>
                 <p class="good-card__price">
-                  <span class="good-card__price-number">310</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__price-number">355</span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-and-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">415</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочное крем-брюле с карамельной подливкой</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочное крем-брюле с карамельной подливкой</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-and-cowberry.png" width="267" height="267" alt="Сливочное с брусничным джемом">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">325</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочное с брусничным джемом</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочное с брусничным<br> джемом</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-and-blueberry.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">410</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочно-черничное с цельными ягодами черники</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочно-черничное с цельными ягодами черники</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/lemon-and-caramel.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">375</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочно-лимонное с карамельной присыпкой</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочно-лимонное с карамельной присыпкой</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-and-choco-chip.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">320</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочное с шоколадной стружкой</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочное с шоколадной стружкой</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/vanilla-and-choco.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">440</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочно-ванильное с кусочками шоколада</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочно-ванильное с кусочками шоколада</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-and-menthol.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">435</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочное с ментоловым сиропом</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочное с ментоловым<br> сиропом</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-black-choco.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">355</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочное с кусочками черного шоколада</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочное с кусочками черного шоколада</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
 
             <li class="catalog__item">
-              <div class="good-card">
+              <section class="good-card">
                 <div class="good-card__image-wrapper">
                   <img class="good-card__image" src="img/content/cream-and-mint.png" width="267" height="267" alt="Сливочное с мятным сиропом">
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">420</span>
-                  <span class="good-card__currency-icon" aria-label="Рублей"></span>
+                  <span class="good-card__currency-icon"><span class="visually-hidden">Рублей</span></span>
                   <span class="good-card__weight">/кг</span>
                 </p>
-                <h3 class="good-card__title">Сливочное с мятным сиропом</h3>
+                <h3 class="good-card__title">
+                  <a href="#" class="good-card__link">Сливочное с мятным сиропом</a>
+                </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
-              </div>
+              </section>
             </li>
           </ul>
 
@@ -457,45 +484,52 @@
         <div class="page-footer__socials">
           <ul class="socials">
             <li class="socials__item">
-              <a href="https://twitter.com/" class="socials__link" target="_blank">
+              <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://www.instagram.com/" class="socials__link" target="_blank">
+              <a href="https://www.instagram.com/" class="socials__link socials__link--inst" target="_blank">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://www.facebook.com/" class="socials__link" target="_blank">
+              <a href="https://www.facebook.com/" class="socials__link socials__link--fb" target="_blank">
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://vk.com/" class="socials__link" target="_blank">
+              <a href="https://vk.com/" class="socials__link socials__link--vk" target="_blank">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
           </ul>
         </div>
 
-        <ul class="page-footer__links">
-          <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link page-footer__link--supplier">Для поставщиков</a>
-          </li>
-          <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">Наши документы</a>
-          </li>
-          <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">О производстве</a>
-          </li>
-          <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">Экологические стандарты</a>
-          </li>
-        </ul>
+        <div class="page-footer__links">
+          <ul class="page-footer__links-list">
+            <li class="page-footer__links-item">
+              <a href="#" class="page-footer__link page-footer__link--supplier">
+                <svg class="page-footer__link-icon" width="15" height="13"><use xlink:href="#icon-heart"></use></svg>
+                Для поставщиков
+              </a>
+            </li>
+            <li class="page-footer__links-item">
+              <a href="#" class="page-footer__link">О производстве</a>
+            </li>
+          </ul>
+          <ul class="page-footer__links-list">
+            <li class="page-footer__links-item">
+              <a href="#" class="page-footer__link">Наши документы</a>
+            </li>
+            <li class="page-footer__links-item">
+              <a href="#" class="page-footer__link">Экологические стандарты</a>
+            </li>
+          </ul>
+        </div>
 
         <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy-logo" target="_blank">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy-link" target="_blank">
             <span class="visually-hidden">HTML Academy</span>
           </a>
           <p class="page-footer__text">Сделано в
