@@ -32,7 +32,7 @@
                     <a class="main-nav__dropdown-link" href="new.html">Новинки</a>
                   </li>
                   <li class="main-nav__dropdown-item">
-                    <a class="main-nav__dropdown-link" href="catalog.html">Сливочное</a>
+                    <a class="main-nav__dropdown-link main-nav__dropdown-link--active">Сливочное</a>
                   </li>
                   <li class="main-nav__dropdown-item">
                     <a class="main-nav__dropdown-link" href="sherbet.html">Щербеты</a>
@@ -140,101 +140,126 @@
           <p class="page-header__schedule">С 10 до 20, ежедневно</p>
           <p class="page-header__tel">8 812 450-25-25</p>
         </div>
+
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current">Сливочное</a>
+          </li>
+        </ul>
       </header>
 
       <main class="main">
-        <section class="main__header">
-          <ul class="breadcrumbs">
-            <li class="breadrumbs__item">
-              <a href="index.html" class="breadcrumbs__link">Главная</a>
-            </li>
-            <li class="breadrumbs__item">
-              <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
-            </li>
-            <li class="breadrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--current">Сливочное</a>
-            </li>
-          </ul>
-          <h1 class="main__title">Сливочное мороженое</h1>
-        </section>
 
-        <section class="catalog">
-          <div class="catalog__filters">
-            <form class="filters" action="#" method="get">
-              <fieldset class="filters__fieldset">
-                <legend class="filters__legend">Сортировка:</legend>
-                <select name="sort" id="sort">
-                  <option value="popular">по популярности</option>
+        <h1 class="main__title">Сливочное мороженое</h1>
+
+        <section class="catalog catalog--inner">
+          <form class="catalog__filters filters" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filters__fieldset">
+              <legend class="filters__legend">Сортировка:</legend>
+              <div class="filters__select-wrapper">
+                <select id="sort" name="sort" class="filters__select">
+                  <option value="popular" selected>по популярности</option>
                   <option value="cheap">сначала недорогие</option>
                   <option value="expensive">сначала дорогие</option>
                   <option value="fatness">по жирности</option>
                 </select>
-              </fieldset>
+                <span class="filters__select-icon"></span>
+              </div>
+            </fieldset>
 
-              <fieldset class="filters__fieldset">
-                <legend class="filters__legend">Цена: 100 руб. - 500 руб.</legend>
-                <div class="filters__wrapper"></div>
-              </fieldset>
+            <fieldset class="filters__fieldset">
+              <legend class="filters__legend">Цена: 100 руб. - 500 руб.</legend>
+              <div class="filters__range range">
+                <div class="range__bar">
+                  <div class="range__between-bar"></div>
+                  <button class="range__button range__button--from" type="button">От</button>
+                  <button class="range__button range__button--to" type="button">До</button>
+                </div>
+              </div>
+            </fieldset>
 
-              <fieldset class="filters__fieldset">
-                <legend class="filters__legend">Жирность:</legend>
-                <ul class="filters__list">
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="radio" name="fatness" value="0" id="filter-zero">
+            <fieldset class="filters__fieldset">
+              <legend class="filters__legend">Жирность:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <label for="filter-zero" class="filters__label">
+                    <input class="filters__input-radio visually-hidden" type="radio" name="fatness" value="0" id="filter-zero">
                     <span class="filters__indicator filters__indicator--radio"></span>
-                    <label for="filter-zero" class="filters__label">0%</label>
-                  </li>
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="radio" name="fatness" value="10" id="filter-ten" checked>
+                    0%
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label for="filter-ten" class="filters__label">
+                    <input class="filters__input-radio visually-hidden" type="radio" name="fatness" value="10" id="filter-ten" checked>
                     <span class="filters__indicator filters__indicator--radio"></span>
-                    <label for="filter-ten" class="filters__label">до 10%</label>
-                  </li>
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="radio" name="fatness" value="30" id="filter-thirty">
+                    до 10%
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label for="filter-thirty" class="filters__label">
+                    <input class="filters__input-radio visually-hidden" type="radio" name="fatness" value="30" id="filter-thirty">
                     <span class="filters__indicator filters__indicator--radio"></span>
-                    <label for="filter-thirty" class="filters__label">до 30%</label>
-                  </li>
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="radio" name="fatness" value="over 30" id="filter-over-thirty">
+                    до 30%
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label for="filter-over-thirty" class="filters__label">
+                    <input class="filters__input-radio visually-hidden" type="radio" name="fatness" value="over 30" id="filter-over-thirty">
                     <span class="filters__indicator filters__indicator--radio"></span>
-                    <label for="filter-over-thirty" class="filters__label">выше 30%</label>
-                  </li>
-                </ul>
-              </fieldset>
+                    выше 30%
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-              <fieldset class="filters__fieldset">
-                <legend class="filters__legend">Наполнители:</legend>
-                <ul class="filters__list">
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="checkbox" name="filler" value="chocolate" id="filter-chocolate" checked>
+            <fieldset class="filters__fieldset">
+              <legend class="filters__legend">Наполнители:</legend>
+              <ul class="filters__list filters__list--checkbox">
+                <li class="filters__item">
+                  <label class="filters__label">
+                    <input class="filters__input-checkbox visually-hidden" type="checkbox" name="filler" value="chocolate" checked>
                     <span class="filters__indicator filters__indicator--checkbox"></span>
-                    <label for="filter-chocolate" class="filters__label">шоколадные</label>
-                  </li>
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="checkbox" name="filler" value="sugar" id="filter-sugar" checked>
+                    шоколадные
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="filters__label">
+                    <input class="filters__input-checkbox visually-hidden" type="checkbox" name="filler" value="sugar" checked>
                     <span class="filters__indicator filters__indicator--checkbox"></span>
-                    <label for="filter-sugar" class="filters__label">сахарные присыпки</label>
-                  </li>
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="checkbox" name="filler" value="fruits" id="filter-fruits">
+                    сахарные присыпки
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="filters__label">
+                    <input class="filters__input-checkbox visually-hidden" type="checkbox" name="filler" value="fruits">
                     <span class="filters__indicator filters__indicator--checkbox"></span>
-                    <label for="filter-fruits" class="filters__label">фрукты</label>
-                  </li>
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="checkbox" name="filler" value="syrup" id="filter-syrup">
+                    фрукты
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="filters__label">
+                    <input class="filters__input-checkbox visually-hidden" type="checkbox" name="filler" value="syrup">
                     <span class="filters__indicator filters__indicator--checkbox"></span>
-                    <label for="filter-syrup" class="filters__label">сиропы</label>
-                  </li>
-                  <li class="filters__item">
-                    <input class="visually-hidden" type="checkbox" name="filler" value="jam" id="filter-jam">
+                    сиропы
+                  </label>
+                </li>
+                <li class="filters__item">
+                  <label class="filters__label">
+                    <input class="filters__input-checkbox visually-hidden" type="checkbox" name="filler" value="jam">
                     <span class="filters__indicator filters__indicator--checkbox"></span>
-                    <label for="filter-jam" class="filters__label">джемы</label>
-                  </li>
-                </ul>
-              </fieldset>
-              <button class="filters__button" type="submit">Применить</button>
-            </form>
-          </div>
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filters__button" type="submit">Применить</button>
+          </form>
 
           <h2 class="visually-hidden">Найденные товары</h2>
 
@@ -386,7 +411,7 @@
                   <span class="good-card__weight">/кг</span>
                 </p>
                 <h3 class="good-card__title">
-                  <a href="#" class="good-card__link">Сливочно-ванильное с кусочками шоколада</a>
+                  <a href="#" class="good-card__link">Сливочно-ванильное с<br> кусочками шоколада</a>
                 </h3>
                 <a href="#" class="good-card__button button">Быстрый просмотр</a>
               </section>
