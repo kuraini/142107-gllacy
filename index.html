@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="index-page">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
       <symbol id="icon-search" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></symbol>
       <symbol id="icon-entrance" viewBox="0 0 21 19"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></symbol>
       <symbol id="icon-cart" viewBox="0 0 21 20"><g><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></symbol>
@@ -59,23 +60,23 @@
             </nav>
 
             <div class="user-block">
-              <div class="user-block__search">
+              <div class="user-block__item">
                 <a href="#" class="user-block__link user-block__link--only-icon">
                   <svg class="user-block__link-icon" width="17" height="17"><use xlink:href="#icon-search"></use></svg>
                   <span class="user-block___link-text visually-hidden">Поиск</span>
                 </a>
-                <form class="search-form" action="#" method="get">
+                <form class="user-block__dropdown search-form" action="#" method="get">
                   <label class="visually-hidden" for="search">Введите название товара</label>
                   <input class="search-form__input" type="search" name="search" placeholder="Что ищем?" id="search">
                 </form>
               </div>
 
-              <div class="user-block__authorization">
+              <div class="user-block__item">
                 <a href="#" class="user-block__link">
                   <svg class="user-block__link-icon" width="21" height="19"><use xlink:href="#icon-entrance"></use></svg>
                   <span class="user-block__link-text">Вход</span>
                 </a>
-                <form class="authorization-form" action="https://echo.htmlacademy.ru" method="post">
+                <form class="user-block__dropdown authorization-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="user-email">Введите ваш email</label>
                   <input class="authorization-form__input" type="email" name="email" placeholder="Электронная почта" id="user-email">
                   <label class="visually-hidden" for="user-password">Введите ваш пароль</label>
@@ -94,7 +95,7 @@
                 </form>
               </div>
 
-              <div class="user-block__cart">
+              <div class="user-block__item">
                 <a href="#" class="user-block__link">
                   <svg class="user-block__link-icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg>
                   <span class="user-block__link-text">Пусто</span>
@@ -276,6 +277,7 @@
           <section class="contacts">
             <h2 class="visually-hidden">Наши контакты</h2>
             <div class="contacts__map">
+              <iframe src="https://yandex.ru/map-widget/v1/-/CBuuv-xNSB" width="1200" height="430"></iframe>
               <img class="contacts__map-image" src="img/content/map.png" width="1200" height="430" alt="Наш адрес: ул. Большая Конюшенная 19/8, Санкт-Петербург">
             </div>
             <div class="contacts__wrapper">
@@ -288,7 +290,7 @@
                 <span class="contacts__text contacts__text--big">8 812 450-25-25</span>
                 <span class="contacts__text">(с 10 до 20 ежедневно)</span>
               </p>
-              <a href="#" class="contacts__button button">Форма обратной связи</a>
+              <a href="message-form.html" class="contacts__button button">Форма обратной связи</a>
             </div>
           </section>
         </main>
@@ -356,11 +358,14 @@
           <h2 class="popup__title">Мы обязательно вам ответим!</h2>
           <form class="message" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="name">Введите ваше имя</label>
-            <input class="message__input" type="text" name="name" placeholder="Как вас зовут?" id="name" required>
+            <input class="message__input" type="text" name="name" placeholder="Как вас зовут?" id="name">
+
             <label class="visually-hidden" for="email">Введите ваш email</label>
-            <input class="message__input" type="email" name="email" placeholder="Ваша почта для ответа?" id="email" required>
+            <input class="message__input" type="email" name="email" placeholder="Ваша почта для ответа?" id="email">
+
             <label class="visually-hidden" for="textarea">Введите ваше сообщение</label>
-            <textarea class="message__textarea" name="message" placeholder="Напишите что-нибудь..." id="textarea" required></textarea>
+            <textarea class="message__textarea" name="message" placeholder="Напишите что-нибудь..." id="textarea"></textarea>
+
             <button class="message__button button" type="submit">Отправить</button>
           </form>
           <button class="popup__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
@@ -368,5 +373,9 @@
 
       </div>
     </div>
+
+    <div class="overlay"></div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
         <symbol id="arrow" viewBox="0 0 8 12"><path d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></symbol>
         <symbol id="icon-search" viewBox="0 0 17 17"><path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></symbol>
         <symbol id="icon-entrance" viewBox="0 0 21 19"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></symbol>
@@ -55,23 +56,23 @@
           </nav>
 
           <div class="user-block">
-            <div class="user-block__search">
+            <div class="user-block__item">
               <a href="#" class="user-block__link user-block__link--only-icon">
                 <svg class="user-block__link-icon" width="17" height="17"><use xlink:href="#icon-search"></use></svg>
                 <span class="user-block___link-text visually-hidden">Поиск</span>
               </a>
-              <form class="search-form" action="#" method="get">
+              <form class="user-block__dropdown search-form" action="#" method="get">
                 <label class="visually-hidden" for="search">Введите название товара</label>
                 <input class="search-form__input" type="search" name="search" placeholder="Что ищем?" id="search">
               </form>
             </div>
 
-            <div class="user-block__authorization">
+            <div class="user-block__item">
               <a href="#" class="user-block__link">
                 <svg class="user-block__link-icon" width="21" height="19"><use xlink:href="#icon-entrance"></use></svg>
                 <span class="user-block__link-text">Вход</span>
               </a>
-              <form class="authorization-form" action="https://echo.htmlacademy.ru" method="post">
+              <form class="user-block__dropdown authorization-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="user-email">Введите ваш email</label>
                 <input class="authorization-form__input" type="email" name="email" placeholder="Электронная почта" id="user-email">
                 <label class="visually-hidden" for="user-password">Введите ваш пароль</label>
@@ -90,13 +91,13 @@
               </form>
             </div>
 
-            <div class="user-block__cart user-block__cart--filled">
+            <div class="user-block__item user-block__item--cart-filled">
               <a href="#" class="user-block__link user-block__link--cart-filled">
                 <svg class="user-block__link-icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg>
                 <span class="user-block__link-text">2 товара</span>
               </a>
 
-              <div class="cart">
+              <div class="user-block__dropdown cart">
                 <table class="cart__goods">
                   <tr>
                     <td>
