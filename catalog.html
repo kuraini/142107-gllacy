@@ -23,7 +23,7 @@
         <div class="page-header__wrapper">
           <nav class="page-header__nav">
             <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image" src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy»">
+              <img class="page-header__logo-image" src="img/svg/logo.svg" width="154" height="64" alt="На главную страницу">
             </a>
             <ul class="main-nav">
               <li class="main-nav__item">
@@ -58,7 +58,7 @@
           <div class="user-block">
             <div class="user-block__item">
               <a href="#" class="user-block__link user-block__link--only-icon">
-                <svg class="user-block__link-icon" width="17" height="17"><use xlink:href="#icon-search"></use></svg>
+                <svg class="user-block__link-icon" width="17" height="17" role="presentation"><use xlink:href="#icon-search"></use></svg>
                 <span class="user-block___link-text visually-hidden">Поиск</span>
               </a>
               <form class="user-block__dropdown search-form" action="#" method="get">
@@ -69,7 +69,7 @@
 
             <div class="user-block__item">
               <a href="#" class="user-block__link">
-                <svg class="user-block__link-icon" width="21" height="19"><use xlink:href="#icon-entrance"></use></svg>
+                <svg class="user-block__link-icon" width="21" height="19" role="presentation"><use xlink:href="#icon-entrance"></use></svg>
                 <span class="user-block__link-text">Вход</span>
               </a>
               <form class="user-block__dropdown authorization-form" action="https://echo.htmlacademy.ru" method="post">
@@ -92,8 +92,8 @@
             </div>
 
             <div class="user-block__item user-block__item--cart-filled">
-              <a href="#" class="user-block__link user-block__link--cart-filled">
-                <svg class="user-block__link-icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg>
+              <a href="#" class="user-block__link user-block__link--cart-filled" aria-label="В вашей корзине">
+                <svg class="user-block__link-icon" width="21" height="20" role="presentation"><use xlink:href="#icon-cart"></use></svg>
                 <span class="user-block__link-text">2 товара</span>
               </a>
 
@@ -107,7 +107,10 @@
                     </td>
                     <td>
                       <div class="cart__image-wrapper">
-                        <img class="cart__image" src="img/content/cart/mini-cream-and-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/cart/mini-cream-and-orange.webp">
+                          <img class="cart__image" src="img/content/cart/mini-cream-and-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                        </picture>
                       </div>
                     </td>
                     <td class="cart__title">Пломбир с апельсиновым джемом</td>
@@ -122,7 +125,10 @@
                     </td>
                     <td>
                       <div class="cart__image-wrapper">
-                        <img class="cart__image" src="img/content/cart/mini-rasp-and-white-choco.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/cart/mini-rasp-and-white-choco.webp">
+                          <img class="cart__image" src="img/content/cart/mini-rasp-and-white-choco.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                        </picture>
                       </div>
                     </td>
                     <td class="cart__title">Клубничный пломбир с присыпкой из белого шоколада</td>
@@ -268,7 +274,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-and-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cream-and-orange.webp">
+                    <img class="good-card__image" src="img/content/cream-and-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">310</span>
@@ -285,7 +294,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/coffee-and-choco.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/coffee-and-choco.webp">
+                    <img class="good-card__image" src="img/content/coffee-and-choco.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">380</span>
@@ -302,7 +314,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/rasp-and-white-choco.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/rasp-and-white-choco.webp">
+                    <img class="good-card__image" src="img/content/rasp-and-white-choco.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">355</span>
@@ -319,7 +334,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-and-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cream-and-caramel.webp">
+                    <img class="good-card__image" src="img/content/cream-and-caramel.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">415</span>
@@ -336,7 +354,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-and-cowberry.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+                  <picture>
+                    <source type="image/webp" srcset="img//content/cream-and-cowberry.webp">
+                    <img class="good-card__image" src="img/content/cream-and-cowberry.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">325</span>
@@ -353,7 +374,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-and-blueberry.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cream-and-blueberry.webp">
+                    <img class="good-card__image" src="img/content/cream-and-blueberry.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">410</span>
@@ -370,7 +394,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/lemon-and-caramel.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/lemon-and-caramel.webp">
+                    <img class="good-card__image" src="img/content/lemon-and-caramel.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">375</span>
@@ -387,7 +414,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-and-choco-chip.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cream-and-choco-chip.webp">
+                    <img class="good-card__image" src="img/content/cream-and-choco-chip.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">320</span>
@@ -404,7 +434,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/vanilla-and-choco.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/vanilla-and-choco.webp">
+                    <img class="good-card__image" src="img/content/vanilla-and-choco.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">440</span>
@@ -421,7 +454,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-and-menthol.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cream-and-menthol.webp">
+                    <img class="good-card__image" src="img/content/cream-and-menthol.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">435</span>
@@ -438,7 +474,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-black-choco.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cream-black-choco.webp">
+                    <img class="good-card__image" src="img/content/cream-black-choco.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">355</span>
@@ -455,7 +494,10 @@
             <li class="catalog__item">
               <section class="good-card">
                 <div class="good-card__image-wrapper">
-                  <img class="good-card__image" src="img/content/cream-and-mint.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/cream-and-mint.webp">
+                    <img class="good-card__image" src="img/content/cream-and-mint.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+                  </picture>
                 </div>
                 <p class="good-card__price">
                   <span class="good-card__price-number">420</span>
@@ -510,22 +552,22 @@
         <div class="page-footer__socials">
           <ul class="socials">
             <li class="socials__item">
-              <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank">
+              <a href="https://twitter.com/" class="socials__link socials__link--tw" target="_blank" rel="noopener">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://www.instagram.com/" class="socials__link socials__link--inst" target="_blank">
+              <a href="https://www.instagram.com/" class="socials__link socials__link--inst" target="_blank" rel="noopener">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://www.facebook.com/" class="socials__link socials__link--fb" target="_blank">
+              <a href="https://www.facebook.com/" class="socials__link socials__link--fb" target="_blank" rel="noopener">
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li class="socials__item">
-              <a href="https://vk.com/" class="socials__link socials__link--vk" target="_blank">
+              <a href="https://vk.com/" class="socials__link socials__link--vk" target="_blank" rel="noopener">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
@@ -536,7 +578,7 @@
           <ul class="page-footer__links-list">
             <li class="page-footer__links-item">
               <a href="#" class="page-footer__link page-footer__link--supplier">
-                <svg class="page-footer__link-icon" width="15" height="13"><use xlink:href="#icon-heart"></use></svg>
+                <svg class="page-footer__link-icon" width="15" height="13" role="presentation"><use xlink:href="#icon-heart"></use></svg>
                 Для поставщиков
               </a>
             </li>
@@ -555,11 +597,11 @@
         </div>
 
         <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy-link" target="_blank">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__academy-link" target="_blank" rel="noopener">
             <span class="visually-hidden">HTML Academy</span>
           </a>
           <p class="page-footer__text">Сделано в
-            <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__link" target="_blank">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="page-footer__link" target="_blank" rel="noopener">HTML Academy</a>
             &copy; 2017
           </p>
         </div>
