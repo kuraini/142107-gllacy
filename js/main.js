@@ -38,4 +38,4 @@ form.addEventListener("submit", function (evt) {
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup--error");
   }
-})
+});
