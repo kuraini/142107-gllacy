@@ -2029,6 +2029,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.filters__list--radio {
+  width: 415px;
+}
+
+.filters__list--checkbox {
+  width: 703px;
+  padding-right: 13px;
+}
+
 .filters__item {
   margin-right: 17px;
   margin-bottom: 7px;
@@ -2143,7 +2152,7 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
-  border-radius: 15px;
+  border-radius: 18px;
   outline: none;
 
   -webkit-transition: all 0.2s ease-in-out;
