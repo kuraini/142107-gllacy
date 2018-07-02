@@ -1867,36 +1867,18 @@ input[type="radio"].visually-hidden {
 }
 
 .filters__select-wrapper {
-  position: relative;
-
   width: 193px;
-
-}
-
-.filters__select-icon {
-  position: absolute;
-  top: 0;
-  right: -1px;
-
-  width: 32px;
   height: 36px;
 
-  background-color: #9db1a5;
-  background-image: url(../img/svg/icon-down-dir.svg);
-  background-repeat: no-repeat;
-  background-position: 7px 13px;
-  background-size: 11px 10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
 
-  pointer-events: none;
+  overflow: hidden;
 }
 
 .filters__select {
-  width: 100%;
+  width: 223px;
   height: 36px;
   padding-top: 6px;
-  padding-right: 12px;
   padding-bottom: 9px;
   padding-left: 12px;
 
@@ -1907,8 +1889,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: rgba(255, 255, 255, 0.2);
+  background-image: url(../img/svg/icon-down-dir.svg);
+  background-repeat: no-repeat;
+  background-position: 168px 13px;
+  background-size: 11px 10px;
   border: none;
-  border-radius: 20px;
   outline: none;
 
   -webkit-appearance: none;
@@ -1918,19 +1903,13 @@ input[type="radio"].visually-hidden {
 
 .filters__select:hover {
   color: #323232;
+
+  background-image: url(../img/svg/icon-down-dir-hover.svg);
 }
 
 .filters__select:focus {
   color: #323232;
 
-  background-color: #ffffff;
-}
-
-.filters__select:hover ~ .filters__select-icon {
-  background-image: url(../img/svg/icon-down-dir-hover.svg);
-}
-
-.filters__select:focus ~ .filters__select-icon {
   background-color: #ffffff;
   background-image: url(../img/svg/icon-down-dir-hover.svg);
 }
@@ -2050,6 +2029,15 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.filters__list--radio {
+  width: 415px;
+}
+
+.filters__list--checkbox {
+  width: 703px;
+  padding-right: 13px;
+}
+
 .filters__item {
   margin-right: 17px;
   margin-bottom: 7px;
@@ -2164,7 +2152,7 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
-  border-radius: 15px;
+  border-radius: 18px;
   outline: none;
 
   -webkit-transition: all 0.2s ease-in-out;
